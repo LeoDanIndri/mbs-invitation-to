@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MBS/Tunangan</title>
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Sacramento&family=Style+Script&family=Work+Sans:wght@100;400;600;700&display=swap" rel="stylesheet">
+ <!-- B-icons -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+ <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- Animation On Scroll -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <section 
+    id="hero"
+    class="hero w-100 h-100  mx-auto text-center d-flex justify-content-center  text-white">
+    <main>
+        <p class="mbs">MBS</p>
+        <h1>Maba Belo Selambar</h1>
+        <h4>atau</h4>
+        <h1>Tunangan</h1>
+        <br>
+        <br>
+        <br><br><br><br><br>
+        <h4>Kepada Bapak/Ibu/Saudara/i/Teman-Teman</h4>
+        <h2><span></span></h2>
+        <div class=""></div>
+        <a href="#cover" class="tampil" id="tampil"><button onClick="putarmusic(), enableScroll()"><i class="bi bi-envelope-open-heart"></i> Lihat Undangan</a>
+    </main>
+    </section>
+
+    <section id="cover" class="cover">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <br><br>
+                <h4>MBS</h4>
+                <h5>Maba Belo Selambar</h5>
+                <h6>atau</h6>
+                <h5>Tunangan</h5>
+                <h1>Tanpa mengurangi rasa hormat. <br>Kami mengundang Bapak/Ibu/Saudara/i/Teman-Teman untuk menghadiri acara MBS atau Tunagan kami :</h1>
+                <br><br>
+                <h2>Chandra Andiva Tarigan</h2>
+                <h2>&</h2>
+                <h2>Merica Bina Br Sitepu</h2>
+                <br><br>
+                <h3>Yang diadakan pada :</h3>
+                <h3>Jumat, 22 September 2023</h3>
+                <h3>Pukul, 14:30 WIB s/d Selesai</h3>
+                <p>Tempat</p>
+                <p>RM.BPK Tambar Lihe</p>
+                <p>Jl.Medan No.54 Petapahan Lubuk Pakam</p>
+                <a href="https://maps.app.goo.gl/D7oJCM5q4cQwFUbq9" target="_blank" class="btn btn-secondary btn-sm my-4">Klik Untuk Membuka Peta</a>
+                <br><br>
+            </div>
+            <div class="col-md-8 text-center">
+             <p>Atas kehadiran Bapak/Ibu/Saudara/i/Teman-Teman, Kami ucapkan Terimakasih</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <p class="block">Copyright &copy; 2023 Aldo Sitepu. All Rights Reserved.</p>
+              <p class="block">Design by <a href="https://instagram.com/dozzrxyz">@dozzrxyz</a>.</p>
+  
+              <ul>
+                <li><a href="https://instagram.com/dozzrxyz"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/@aldokyz_"><i class="bi bi-tiktok"></i></a></li>
+                <li><a href="https://www.youtube.com/@aldokyz"><i class="bi bi-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+<body>
+    <!-- custom nama tamu -->
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get("n") || "";
+    const pronoun = urlParams.get("p") || " ";
+    const namaContainer = document.querySelector(".hero h2 span");
+    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/ , ",");
+  
+    document.querySelector("#nama").value = nama;
+  </script>
+
+<!-- AP Music -->
+<script>
+    var a = document.getElementById('tampil');
+     function putarmusic(){
+     a.style.display = "none";
+    var audio = new Audio('music/musik.MP4');
+    audio.play();
+    }
+ </script>
+</body>
+</html>
+
+<!-- disable scroll -->
+<script>
+    const rootElement = document.querySelector(":root");
+
+    function disableScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+    window.onscroll = function() {
+      window.scrollTo(scrollTop, scrollLeft);
+    }
+
+    rootElement.style.scrollBehavior = 'auto';
+   }
+
+   function enableScroll() {
+    window.onscroll = function () { }
+    rootElement.style.scrollBehavior = 'smooth'
+   }
+
+   disableScroll();
+  </script>
