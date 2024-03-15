@@ -1,163 +1,737 @@
 :root {
-    --pink: #724904;
-    --bg: #0a0a0a;
-    --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
-    --sdw: #0a0a0a
-    min-height: 4000px;
-  }
+  --pink: #ff81bc;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
+  --sdw: #0a0a0a
+  min-height: 4000px;
+}
 
-  body {
-    font-size: 1.2rem;
-    font-family: "Work Sans", sans-serif;
-  }
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+}
 
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(img/bg.JPG);
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    filter: ();
-  }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/galery/g8-min.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: ();
+}
 
-  .hero {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  .hero p {
-    text-shadow: var(--shadow);
-    font-family: "patua one";
-    font-size: 2rem;
-  }
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
 
-  .cover h4 {
-    text-shadow: var(--shadow);
-    font-family: "patua one";
-    font-size: 2.7rem;
-    color: var(--pink);
-  }
-  
-  .hero h1,
-  .cover h5 {
-    font-family: "sacramento";
-    font-size: 2.3rem;
-  }
-  
-  .hero h4,
-  .cover h6 {
-    font-size: 1rem;
-  }
-  
-  .hero p {
-    font-size: 5rem;
-    color: white;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  .hero h2 span {
-    color: rgb(255, 255, 255);
-    font-size: 3rem;
-    font-family: "patua one";
-    text-shadow: var(--bg);
-  }
-  
-  .hero a button {
-    color: white;
-    background-color: var(--pink);
-    box-shadow: var(--shadow);
-    font-size: 1.3rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin-top: 0rem;
-    border-radius: 10px;
-  }
-  
-  .hero a button:hover {
-    background-color: white;
-    color: var(--pink);
-  }
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
 
-  .hero h2 span {
-    color: rgb(255, 255, 255);
-    font-size: 2.5rem;
-    font-family: "patua one";
-    text-shadow: var(--bg);
-  }
+.hero h1 {
+  font-family: "sacramento";
+  font-size: 6rem;
+}
 
-  .hero a button {
-    color: white;
-    background-color: var(--pink);
-    box-shadow: var(--shadow);
-    font-size: 1.3rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin-top: 0rem;
-    border-radius: 10px;
-  }
-  
-  .hero a button:hover {
-    background-color: white;
-    color: var(--pink);
-  }
+.hero h4 {
+  font-size: 1.6rem;
+}
 
-  .cover {
-    align-items: center;
-    justify-content: center;
-    background-image: url(img/bg2.jpg);
-  }
+.hero p {
+  font-size: 1.4rem;
+}
 
-  .cover h1 {
-    font-size: 1rem;
-  }
 
-  .cover h2 {
-    font-family: "patua one";
+.hero h2 span {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-family: "patua one";
+  text-shadow: var(--bg);
+}
+
+.hero a button {
+  color: white;
+  background-color: var(--pink);
+  box-shadow: var(--shadow);
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0rem;
+  border-radius: 10px;
+}
+
+.hero a button:hover {
+  background-color: white;
+  color: var(--pink);
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.cover {
+  background-image: url(img/bg2.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15rem;
+  padding-bottom: 20rem;
+}
+
+.cover h1 {
+  font-size: 8rem;
+  font-family: "Style Script";
+  font-weight: bold 100px;
+  color: var(--pink);
+  padding-top: auto;
+  padding-bottom: auto;
+  transform: scale(1.5);
+}
+
+.cover h2 {
+  font-family: "patua one";
   font-size: 2rem;
   color: var(--pink);
+  padding-top: 20%;
+  padding-bottom: 10%;
   font-weight: bold;
-  }
+}
 
-  .cover h3,
-  .cover p {
-    font-size: 1rem;
-  }
+.home {
+  background-image: url(img/bg.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
 
-  
+.home h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2,
+.kata-kata h2,
+.reservasi h2 {
+  color: var(--pink);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.home h3,
+.kata-kata h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-family: "Sacramento";
+  font-size: 2.5rem;
+  color: var(--pink);
+}
+.home .couple img {
+  width: 100%;
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
+}
+
+.info {
+  background-color: #646464;
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info a {
+  font-size: 1.2rem;
+}
+
+.info h2 {
+  color: var(--pink);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card-headre {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footeer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.gallery,
+.rsvp,
+.kata-kata,
+.gifts {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.reservasi {
+  background-image: url(img/bg3.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15rem;
+  padding-bottom: 20rem;
+}
+
+.story {
+  background-image: url(img/bg4.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15rem;
+  padding-bottom: 20rem;
+}
+
+.story span,
+.gallery span,
+.gifts span,
+.kata-kata span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p,
+.kata-kata p,
+.reservasi p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.gallery h1,
+.credits h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.credits h2 {
+  padding-top: -2rem;
+}
+.gallery a {
+  height: 20px;
+}
+
+.kata-kata {
+  padding-bottom: 30%;
+}
+
+.gallery img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax 125px);
+  margin: 0px;
+  align-items: center;
+  grid-gap: 0px;
+
+}
+
+.img {
+  object-fit: cover;
+}
+
+.grid img {
+  border-radius: 10px;
+  width: 300px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 160px;
+  height: 160px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid #cccccc00;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #ffffff00;
+  border-right: 0 solid #ffffff00;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeline li .timeline-panel::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+}
+
+.gallery {
+  background-color: #fbebf2;
+}
+
+.copyright {
+  background-color: var(--pink);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+.copyright p {
+  font-size: 1rem;
+  color: white;
+}
+
+.copyright a {
+  color: #fff;
+  font-weight: 0;
+}
+
+.copyright a p {
+  text-underline-offset: 0;
+}
+
+.rsvp {
+  background-color: #0a0a0a;
+}
+
+.rsvp h2 {
+  font-size: 4.5rem;
+}
+
+.rsvp p {
+  color: white;
+}
+
+.rsvp form label {
+  color: white;
+}
+
+.rsvp button,
+.reservasi button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--bg);
+}
+
+.rsvp button:hover,
+.reservasi button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid white;
+}
+
+.top-content {
+  background-color: rgb(243, 243, 243);
+  width: 90%;
+  margin: 0 auto 20px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.top-content h3 {
+  weight: 100px;
+  background-color: lightgray;
+  line-height: 26px;
+  padding: 0 20px;
+  color: white;
+}
+
+.top-content label {
+  display: inline-block;
+  height: 100%;
+  padding: 0px;
+  margin: 0 3px;
+  line-height: 20px;
+  font-size: 13px;
+  color: gray;
+  cursor: pointer;
+  transition: color .5s;
+}
+
+.top-content label:hover {
+  color: black;
+}
+
+.photo-gallery {
+  width: 0.5%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.pic {
+  position: relative;
+  height: 100px;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.grid-wrapper img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.grid-wrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-wrapper div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+  grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+  grid-row: span 2;
+}
+
+.grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.video {
+  border-radius: 100px;
+}
+
+.credits {
+  align-items: center;
+  justify-content: center;
+}
+
+.credits h1 {
+  align-items: center;
+  justify-content: center;
+  font-family: 'Sacramento';
+  font-size: 5rem;
+}
+
+.credits p {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.credits p a{
+  color: var(--pink);
+  text-decoration: none;
+}
+
+.credits p a:hover{
+  color: black
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Media Query */
+
+/* Extra Large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: 15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
 footer {
-    padding: 1rem;
-    background-color: var(--pink);
-  }
-  
-  footer {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  footer a {
-    text-decoration: none;
-    color: var(--bg);
-    size: 0.1rem;
+  padding: 3rem;
+  background-color: var(--pink);
+}
+
+footer {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--bg);
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.home a  {
+  text-decoration: none;
+  color:
+  var(--pink);
+  margin-left: 3vh;
+}
+
+.home a :hover {
+  color: white;
+}
+
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
   }
 
-  footer p {
-    font-size: 0.8rem;
+  .simply-countdown > .simply-section {
+    padding: 70px;
   }
+
+  .home .heart {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 37px;
+    margin: 3px;
+  }
+
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 65%;
+    transform: translateX(-20px);
+  }
+
   
-  footer a:hover {
-    color: white;
+  .gallery img {
+    padding-top: 0rem;
   }
-  
-  footer li {
-    list-style: none;
-    display: inline;
-    margin: 0.1rem;
-  }
+}
